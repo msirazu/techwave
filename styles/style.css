@@ -485,10 +485,6 @@ body {
         font-size: 2rem;
     }
 
-    .choose-grid {
-        min-height: 500px;
-    }
-
     .why-card {
         grid-row: span 1;
     }
@@ -506,9 +502,9 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .footer, .meet-card, .why-choose, .choose-grid {
+    .footer, .meet-card, .choose-grid, .why-choose {
         padding: 10px;
-        height: auto;
+        min-height: max-content;
         width: 100%;
     }
 
