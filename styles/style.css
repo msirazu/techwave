@@ -86,17 +86,18 @@ body {
     background-color: #1A0B2E;
     height: 75px;
     padding: 15px 0px;
+    border-bottom: 1px solid #dddddd20;
 }
 
 .navbar-container {
     justify-content: space-around;
 }
 
-.nav-logo-container > h1 {
+.nav-logo-container > h1, .footer-logo > h2 {
     color: #FFFFFF;
 }
 
-.nav-logo-container > h1 > span {
+.nav-logo-container > h1 > span, .footer-logo > h2 > span {
     background: -webkit-linear-gradient(#F7E93F, #FB09B4, #9100F8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,6 +118,10 @@ body {
     font-weight: 600;
 }
 
+.nav-links-container > li > a:hover {
+    color: #FB09B4;
+}
+
 /* hero banner style section */
 
 .main {
@@ -125,7 +130,7 @@ body {
 
 .banner {
     background-image: url('../assets/images/hero-bg.png');
-    height: 600px;
+    height: 700px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,6 +145,16 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 0 25px 0;
+    position: relative;
+}
+
+.banner-icon-container > p {
+    background-color: #00FF88;
+    padding: 5px 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 150px;
 }
 
 .banner-icon {
@@ -152,9 +167,9 @@ body {
 }
 
 .banner-icon > img {
-    width: 117px;
-    height: 175px;
-}
+    width: 100px;
+    height: 150px;
+} 
 
 .banner-btn {
     justify-content: center;
@@ -164,4 +179,55 @@ body {
 
 .banner-container > p {
     margin: 10px 0 20px 0;
+}
+
+
+
+
+/* footer style section */
+
+.footer {
+    max-width: 100%;
+    height: 300px;
+    background-image: url('../assets/images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.footer-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo > h2 {
+    font-size: 4rem;
+}
+
+.footer-social {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-social > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+}
+
+.footer-social > p > img {
+    width: 15px;
+    height: 13px;
+}
+
+.footer-copyright {
+    color: #FFFFFF;
+    font-size: 0.75rem;
 }
