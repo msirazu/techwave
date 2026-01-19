@@ -477,8 +477,13 @@ body {
 /* responsive style section */
 
 @media screen and (max-width: 576px) {
-    .header, .banner, .about {
+
+    .nav-links-container, .nav-btn-container {
         display: none;
+    }
+
+    .banner-icon-container > p {
+        right: 75px;
     }
 
     .text-header {
@@ -502,7 +507,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .footer, .meet-card, .choose-grid, .why-choose {
+    .footer, .meet-card, .choose-grid, .why-choose, .about, .banner {
         padding: 10px;
         min-height: max-content;
         width: 100%;
@@ -513,7 +518,7 @@ body {
         text-align: center;
     }
 
-    .footer-container, .footer-social, .meet-card {
+    .footer-container, .footer-social, .meet-card, .about-card, .about-container, .banner, .navbar-container {
         flex-direction: column;
     }
 }
