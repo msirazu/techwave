@@ -473,3 +473,51 @@ body {
     color: #FFFFFF;
     font-size: 0.75rem;
 }
+
+/* responsive style section */
+
+@media screen and (max-width: 576px) {
+    .header, .banner, .about {
+        display: none;
+    }
+
+    .text-header {
+        font-size: 2rem;
+    }
+
+    .choose-grid {
+        min-height: 500px;
+    }
+
+    .why-card {
+        grid-row: span 1;
+    }
+
+    .meet-text {
+       text-align: center;
+    }
+
+    .featured, .why-choose {
+        padding: 20px;
+        height: auto;
+    }
+
+    .episodes-card-container, .choose-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer, .meet-card, .why-choose, .choose-grid {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-logo > h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-container, .footer-social, .meet-card {
+        flex-direction: column;
+    }
+}
