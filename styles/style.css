@@ -134,10 +134,10 @@ body {
 
 .banner {
     background-image: url('../assets/images/hero-bg.png');
-    height: 700px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 50px 0;
 }
 
 .banner-container {
@@ -166,13 +166,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .banner-icon > img {
-    width: 100px;
-    height: 150px;
+    width: 80px;
+    height: 130px;
 } 
 
 .banner-btn {
@@ -189,7 +189,6 @@ body {
 
 .about {
     max-width: 1440px;
-    height: 600px;
     background-color: #1A0B2E;
     padding: 50px 200px;
 }
@@ -218,6 +217,8 @@ body {
 .about-card {
     max-width: 700px;
     gap: 25px;
+    grid-template-columns: repeat(4, 150px);
+    justify-items: center;
 }
 
 .hr {
@@ -251,7 +252,6 @@ body {
 
 .why-choose {
     max-width: 100%;
-    max-height: 800px;
     background-color: #230E3D;
     padding: 100px 150px;
 }
@@ -311,7 +311,6 @@ body {
 
 .featured {
     max-width: 1440px;
-    height: 1000px;
     background-color: #1A0B2E;
     padding: 100px 150px;
 }
@@ -407,7 +406,7 @@ body {
 }
 
 .meet-text > p {
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
     font-size: 0.75rem;
     color: #FFFFFF;
     font-weight: 400;
@@ -430,7 +429,6 @@ body {
 
 .footer {
     max-width: 100%;
-    height: 300px;
     background-image: url('../assets/images/footer-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -450,9 +448,9 @@ body {
 }
 
 .footer-social {
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    grid-template-columns: repeat(4, 120px);
+    margin: 0 0 10px 0;
+    gap: 10px;
 }
 
 .footer-social > p {
@@ -486,8 +484,24 @@ body {
         right: 75px;
     }
 
+    .banner-icon {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-icon > img {
+        width: 60px;
+        height: 100px;
+    }
+
     .text-header {
         font-size: 2rem;
+    }
+
+    .about-card, .footer-social  {
+        width: 100%;
+        grid-template-columns: repeat(2, 120px);
+        justify-content: center;
     }
 
     .why-card {
@@ -496,6 +510,10 @@ body {
 
     .meet-text {
        text-align: center;
+    }
+
+    .meet-social {
+        justify-content: center;
     }
 
     .featured, .why-choose {
@@ -518,7 +536,7 @@ body {
         text-align: center;
     }
 
-    .footer-container, .footer-social, .meet-card, .about-card, .about-container, .banner, .navbar-container {
+    .footer-container, .meet-card, .about-container, .banner, .navbar-container {
         flex-direction: column;
     }
 }
