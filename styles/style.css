@@ -8,7 +8,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     border: 1px solid #ddd;
     height: 100vh;
@@ -23,14 +23,18 @@ body {
 .items-center { align-items: center; }
 
 .btn-primary {
-    background-image: linear-gradient(to right, #F7E93F, #FB09B4);
-    width: 135px;
-    height: 45px;
+    background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    width: 150px;
+    height: 40px;
     border-radius: 50px;
     border: none;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-primary:hover {
@@ -38,10 +42,42 @@ body {
     cursor: pointer;
 }
 
+.btn-secondary {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    text-decoration: none;
+}
+
+.text-primary {
+    font-size: 4rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.text-header {
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
 .text-secondary {
     font-size: 1rem;
     color: #FFFFFF;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 
 /* header style section */
@@ -79,4 +115,53 @@ body {
     font-size: 1rem;
     color: #FFFFFF;
     font-weight: 600;
+}
+
+/* hero banner style section */
+
+.main {
+    max-width: 100%;
+}
+
+.banner {
+    background-image: url('../assets/images/hero-bg.png');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-container {
+    max-width: 500px;
+    text-align: center;
+}
+
+.banner-icon-container {
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px 0;
+}
+
+.banner-icon {
+    background-image: url('../assets/images/hero-circle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+.banner-icon > img {
+    width: 117px;
+    height: 175px;
+}
+
+.banner-btn {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-container > p {
+    margin: 10px 0 20px 0;
 }
