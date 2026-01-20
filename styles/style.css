@@ -341,8 +341,8 @@ body {
     background-color: #dddddd20;
 }
 
-.episodes-image > a > img {
-    width: 100%;
+.episodes-image > iframe {
+    border-radius: 10px;
 }
 
 .episodes-text {
