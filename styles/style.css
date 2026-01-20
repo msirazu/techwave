@@ -39,6 +39,8 @@ body {
 .btn-primary:hover {
     background-image: linear-gradient(to left, #F7E93F, #FB09B4);
     cursor: pointer;
+    transform: rotate(5deg);
+    transition: 500ms ease all;
 }
 
 .btn-secondary {
@@ -58,6 +60,8 @@ body {
 .btn-secondary:hover {
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+    transform: rotate(-5deg);
+    transition: 500ms ease all;
 }
 
 .text-primary {
@@ -162,7 +166,8 @@ body {
     border-radius: 50px;
     position: absolute;
     top: 0;
-    right: 150px;
+    right: 100px;
+    box-shadow: 0 0 10px #FFFFFF;
 }
 
 .banner-icon {
